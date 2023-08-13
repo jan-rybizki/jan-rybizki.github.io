@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>Jan Rybizki - Homepage</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86">
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="Jan%20Rybizki%20-%20Homepage_files/main.css">
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body class="">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+	<!--Header -->
+	<header id="header" class="alt">
+	<h1>Jan Rybizki</h1>
+	<p>I am a Postdoc at the Max Planck Institute for Astronomy (<a href="http://www.mpia.de/en">MPIA</a>) working in the <a href="http://www.mpia.de/gaia">Gaia group</a>. My research focuses on astrophysical inferences from large data-sets.</p>
+	</header>
+
+	<!-- Nav -->
+	<nav id="nav" class="">
+	<ul>
+	<li><a href="#intro" class="active">Research</a></li>
+	<li><a href="#first" class="">Student projects</a></li>
+	<li><a href="#second" class="">Teaching</a></li>
+	<li><a href="#publ" class="">Visualisations</a></li>
+	<li><a href="#third" class="">About me</a></li>
+	<li><a href="#cta" class="">Contact</a></li>
+	</ul>
+	</nav>
+
+	<!-- Main -->
+	<div id="main">
+	<!-- Introduction -->
+
+
+
+	<!-- Research -->
+	<section id="intro" class="main style1">
+	<header class="major special">
+	<h2> Research </h2>
+	</header>
+
+	<div class="container">
+
+
+
+	<div class="row 150%">
+	<div class="6u 12u$(medium)">
+	<header class="major">
+	<h3> Science with Gaia data</h3>
+	<!-- <h5> "Protoplanetary disks" </h5> -->
+	</header>
+	<p> For the next Gaia data release I am developing a pipeline that infers binary stellar parameters from BPRP spectra.
+	Our group also facilitated the use of Gaia DR2 by preparing a <a href="http://adsabs.harvard.edu/abs/2018PASP..130g4101R">mock catalog</a> and a <a href="http://adsabs.harvard.edu/abs/2018AJ....156...58B">geometric distance catalog</a> which can be queried via <a href="http://docs.g-vo.org/adql-gaia/html/index.html">ADQL</a>.
+	We also looked into <a href="http://adsabs.harvard.edu/abs/2018A%26A...616A..37B">close stellar encounters</a> exploiting the 7.2mio radial velocities provided by Gaia. Building up on that we have identified likely close encounter candidates from the 1.33 bn sources with parallaxes and proper motions for <a href="https://github.com/jan-rybizki/Gaia_data_analysis_HGSFP2018/blob/master/notebooks/Day%203.ipynb">follow-up observations</a>.</p>
+	</div>
+	<div class="6u$ 12u$(medium) important(medium)">
+	<video id="video" class="image fit" controls="controls" height="300" width="400">
+	<source src="Jan%20Rybizki%20-%20Homepage_files/gdr2_sliced.ogg" type="video/ogg">
+	<source src="Jan%20Rybizki%20-%20Homepage_files/gdr2_sliced.mp4" type="video/mp4">
+	</video>
+	<h6> GaiaDR2 sliced in 4 + 4 dimensions. We use G magnitude and BP-RP color and also the position on the sky to show the mean values of parallax, proper motions and radial velocity. Compiled using my <a href="https://github.com/jan-rybizki/gdr2_completeness">completeness package</a>.</h6>
+	</div>
+	</div>
+
+	<div class="row 150%">
+	<div class="6u 12u$(medium)">
+	<header class="major">
+	<h3> Chemical evolution of the Milky Way </h3>
+	<!-- <h5> "Early stages of star formation" </h5> -->
+	</header>
+	<p> During my <a href="https://arxiv.org/abs/1802.08432">PhD thesis</a> I have written <a href="https://github.com/jan-rybizki/Chempy">Chempy</a>, a flexible chemical evolution code,
+		that can predict the elemental abundance distribution of the interstellar medium over time.
+		<a href="http://adsabs.harvard.edu/abs/2017A%26A...605A..59R">By comparing</a> to the elemental abundances found in stars we are able to infer fundamental parameters of the Milky Way, like the <a href ="http://adsabs.harvard.edu/abs/2015MNRAS.447.3880R">stellar initial mass function (IMF)</a>.
+		With my summer student Oliver Philcox, <a href="http://adsabs.harvard.edu/abs/2018ApJ...861...40P">we tested</a> how well different nucleosynthetic yield calculations of core-collapse Supernovae are able to reproduce the Solar elemental abundances. For the most abundant elements this already works reasonably well and we can also predict optimal parameters and yield sets for hydrodynamical simulations.</p>
+	</div>
+	<div class="6u$ 12u$(medium) important(medium)">
+	<span class="image fit"><img src="Jan%20Rybizki%20-%20Homepage_files/SSP_yield.png" alt=""></span>
+	<h6> <figcaption> The <a href="https://github.com/jan-rybizki/Chempy/blob/master/tutorials/8-Yield%20tables%20for%20SPH%20simulations%20and%20comparison%20to%20other%20tables.ipynb">IMF integrated yields</a> can be used in hydrodynamical simulations to make use of the flexible Chempy framework. </figcaption> </h6>
+	</div>
+	</div>
+
+
+
+	<!-- Publications -->
+	<section id="first" class="main">
+	<header class="major">
+	<h2>Student projects</h2>
+	</header>
+	<p> Possible projects <span style="font-size:0.9em">(usually involving python programming and Bayesian inference)</span>:</p>
+	<p> • Chempy inference with new nucleosynthetic channels (neutron star merger, sub-chandrasekhar SNIa).</p>
+	<p> • Mutual encounter probability for all stars with 6D phase-space information.</p>
+
+	<footer class="major">
+	</footer>
+	</section>
+
+	<!-- Publications -->
+	<section id="second" class="main">
+	<header class="major">
+	<h2>Teaching</h2>
+	</header>
+	<p> • <a href="https://github.com/jan-rybizki/Gaia_Summerschool_2019">Gaia lecture/exercise</a> at the <a href="https://www.cifs-isss.org/">Space Astrometry For Astrophysics school</a> in l'Aquila, Italy 2019</p>
+	<p> • <a href="https://github.com/jan-rybizki/Gaia_data_analysis_HGSFP2018">Gaia Data Science analysis course</a> at the <a href="http://gsfp.physi.uni-heidelberg.de/graddays/index.php?m=0">HGSFP graduate school</a> in Heidelberg, Germany 2018</p>
+	<p> • Chempy <a href="https://github.com/jan-rybizki/Chempy/tree/master/tutorials">tutorial</a> on chemical evolution, solar abundance, simple stellar populations, inference via MCMC etc.</p>
+
+	<footer class="major">
+	</footer>
+	</section>
+
+		<!-- Publications -->
+	<section id="publ" class="main">
+	<header class="major">
+	<h2>Visualisations</h2>
+	</header>
+	<p> • <a href="Jan%20Rybizki%20-%20Homepage_files/rvs_selection_visualisation_intercmd.html"> RVS selection function projected on the sky in bins of CMD</a> (35MB heavy, takes some time to load).</p>
+	
+	<p> • <a href="Jan%20Rybizki%20-%20Homepage_files/rvs_selection_visualisation_intermap.html"> CMD of the RVS selection function per HEALpix bins</a> (100MB heavy, takes some time to load).</p>
+	<footer class="major">
+	</footer>
+	</section>
+	
+	
+	<section id="third" class="main">
+	<div class="spotlight">
+	<div class="content">
+	<header class="major">
+	<h2> About me </h2>
+	</header>
+	<p> • <a href="http://www.mpia.de/de">Max-Planck-Institute for Astronomy</a>, Heidelberg, Germany
+        <br> &nbsp; &nbsp; Postdoc, Astronomy (2016 - Present)
+	</p>
+	<p> • <a href="https://zah.uni-heidelberg.de/institutes/ari/">Zentrum für Astronomie an der Universität Heidelberg</a>, Germany
+	<br> &nbsp; &nbsp; <a href="https://arxiv.org/abs/1802.08432">PhD</a>, Astrophysics (2011 - 2015)
+	</p>
+	<p> • <a href="https://www.aei.mpg.de/165375/AEI_Hannover">Max-Planck-Institute for Gravitational Physics</a>, Hannover, Germany
+	<br> &nbsp; &nbsp; <a href="https://keeper.mpdl.mpg.de/f/2019f238d6024ff4af0b/">Diploma</a>, Physics (2005 - 2011)
+        </p>
+	<p> A detailed CV can be found <a href="Jan%20Rybizki%20-%20Homepage_files/CV_Rybizki_with_links.pdf">here.</a> </p>
+	</div>
+	<span class="image"><img src="Jan%20Rybizki%20-%20Homepage_files/JanRybizki.jpg" alt=""></span>
+	</div>
+	</section>
+	
+
+
+	<!-- Contact -->
+	<section id="cta" class="main special">
+	<header class="major">
+	<h2>Contact</h2>
+	<p>
+	</p><dt> <i class="fa fa-home"></i> Address </dt>
+	<dd>Max-Planck-Institut für Astronomie • Königstuhl 17 • D-69117 Heidelberg • Germany</dd>
+	<dd>Room 134A • +49 (0)6221 / 528-443 • skype (jan.rybizki)</dd>
+        <p></p>
+	<dt> <i class="fa fa-send"></i> Email </dt>
+	<dd><a href="mailto:rybizki@mpia.de">rybizki@mpia.de</a></dd>
+	<dd><span style="font-size:0.6em">PGP fingerprint: 9AD1 DA6A A298 C5C4 AB9B 8CD9 8636 3330 4E1A 7CCA</span></dd>
+	<p></p>
+	
+	<dt> Social media </dt>
+	<dd> <a href="https://twitter.com/rybizki">twitter</a> • <a href="https://github.com/jan-rybizki">github</a> • <a href="https://www.linkedin.com/in/janrybizki/"> LinkedIn</a></dd>
+	
+        <p></p>
+	
+
+	
+	</header></section>
+	</div>
+	 <p class="copyright">© 2018 Jan Rybizki. Design: <a href="https://html5up.net/">HTML5 UP</a>.
+	 <span style="float:right"> Last updated: August 2020 </span> </p>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="Jan%20Rybizki%20-%20Homepage_files/jquery_003.js"></script>
+	<script src="Jan%20Rybizki%20-%20Homepage_files/jquery_002.js"></script>
+	<script src="Jan%20Rybizki%20-%20Homepage_files/jquery.js"></script>
+	<script src="Jan%20Rybizki%20-%20Homepage_files/skel.js"></script>
+	<script src="Jan%20Rybizki%20-%20Homepage_files/util.js"></script>
+	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="Jan%20Rybizki%20-%20Homepage_files/main.js"></script>
+
+	
+
+</body></html>
